@@ -1,23 +1,23 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <Workspace />
+    <Preview />
   </div>
 </template>
 
 <script>
+import Workspace from './components/Workspace'
+import Preview from './components/Preview'
+
 export default {
-  name: 'app'
+  name: 'app',
+  components: {
+    Workspace,
+    Preview
+  }
 }
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style scoped lang="scss">
+
 </style>
